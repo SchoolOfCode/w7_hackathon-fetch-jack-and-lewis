@@ -3,9 +3,17 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: rgb(44, 44, 44);
+    font-family: 'Lato', sans-serif;
+	background: #353535;
+	color: #FFF;
 }
 
-#new-joke{
+#dad-jokes {
+    font-size: large;
+}
+
+/* #new-joke{
     font-size: 30px;
     font-weight: bolder;
     border: black;
@@ -15,8 +23,45 @@ body{
     text-align: center;
     display: inline-block;
     transition: 100ms;
-}
+} */
+
 
 #new-joke:hover{
     transform: scale(1.2);
+}
+
+#new-joke {
+    width: 120px;
+    height: 55px;
+	color:white;
+    background-color: rgb(44, 44, 44);
+    font-weight: bolder;
+	cursor: pointer;
+	display: block;
+	position: relative;
+	border: 2px solid #F7CA18;
+	transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+#new-joke:hover {
+	color: #000 !important;
+	background-color: transparent;
+	text-shadow: ntwo;
+}
+#new-joke:hover:before {
+	top: 0%;
+	bottom: auto;
+	height: 100%;
+}
+#new-joke:before {
+	display: block;
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	height: 0px;
+	width: 100%;
+	z-index: -1;
+	content: '';
+	color: #000 !important;
+	background: #F7CA18;
+	transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
 }
